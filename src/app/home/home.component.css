@@ -1,0 +1,133 @@
+.cards {
+  display: flex;
+}
+
+mat-card-title {
+  font-size: 96%;
+}
+span {
+  font-size: 100%;
+}
+.activeCases {
+  text-align: center;
+}
+.activeCases h2 {
+  border-bottom: 1px solid lightgrey;
+  width: 25%;
+  margin: auto;
+  color: #0d920d;
+}
+
+.otherCards {
+  display: flex;
+}
+.otherCards mat-card {
+  margin: 5px;
+}
+.mainCard {
+  background: linear-gradient(45deg, #c3ec52, #0ba29d);
+  margin: 30px;
+  box-shadow: 10px 18px 20px 0px rgba(143, 141, 141, 0.7);
+}
+.card-1 {
+  background-color: #d8d836;
+  color: #4c4747;
+}
+.card-2 {
+  background-color: #189e18;
+  color: #4c4747;
+}
+.card-3 {
+  background-color: #ee6464e8;
+  color: #4c4747;
+}
+
+.app-logos {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 14px;
+}
+
+.app-logos h3 {
+  margin: 5px;
+  font-weight: 500;
+}
+
+.cowin {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.arogya {
+  background-color: white;
+  padding: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.registration {
+  background-color: rgb(97 97 166);
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.certificate {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: gray;
+  background-color: white;
+  padding: 4px;
+  border-radius: 5px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.certificate mat-icon {
+  align-self: flex-start;
+  margin-right: 8px;
+}
+.certificate p {
+  margin: 0;
+}
+.vaccinations {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  background: #eae5dd;
+  padding: 30px;
+}
+.totalVaccinations {
+  width: 50%;
+  display: flex;
+}
+.todayVaccinations {
+  width: 50%;
+  display: flex;
+  margin-left: 25px;
+}
+.heading {
+  margin-left: 40px;
+}
+.heading h4 {
+  font-size: 18px;
+  margin: 0;
+  color: gray;
+}
+.heading h3 {
+  font-size: 30px;
+  margin-top: 12px;
+  font-weight: 500;
+  color: #5c5757;
+}
+.vaccineImg {
+  height: 65%;
+  padding: 8px;
+  background-color: white;
+  border-radius: 8px;
+}

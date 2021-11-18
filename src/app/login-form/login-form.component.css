@@ -1,0 +1,27 @@
+.container-fluid {
+  text-align: center;
+  width: 70%;
+  height: auto;
+  background-color: white;
+  padding: 0px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 12px 12px 15px 0px rgba(146, 142, 142, 0.5);
+}
+mat-form-field {
+  width: 40%;
+  padding-bottom: 12px;
+}
+
+h1 {
+  font-size: 40px;
+  padding-top: 50px;
+  font-weight: lighter;
+}
+
+.btn {
+  background: linear-gradient(to right, rgb(135, 236, 135), rgb(160, 212, 229));
+  border: none;
+  font-weight: lighter;
+  margin-bottom: 50px;
+}

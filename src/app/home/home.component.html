@@ -1,0 +1,72 @@
+<div class="registration">
+  <div class="app-logos">
+    <h3>
+      Vaccination <br />
+      Registration
+    </h3>
+    <a class="cowin"><img src="../../assets/co-win.png" /></a>
+    <a class="arogya" href="https://www.aarogyasetu.gov.in/"
+      ><img src="../../assets/aarogya_btn_img.png"
+    /></a>
+  </div>
+  <a class="certificate">
+    <mat-icon>card_membership</mat-icon>
+    <p>Get Your <br />Vaccination Certificate</p>
+  </a>
+</div>
+
+<div class="cards">
+  <mat-card class="mainCard" *ngFor="let data of covidData">
+    <mat-card-title
+      >CASES ACROSS <span>{{ data.place | uppercase }}</span>
+    </mat-card-title>
+    <mat-card-content>
+      <div class="activeCases">
+        <h2>{{ data.activeCases }}</h2>
+        <h3>ACTIVE CASES</h3>
+      </div>
+      <div class="otherCards">
+        <mat-card class="card-1">
+          <mat-card-title>TOTAL CASES</mat-card-title>
+          <mat-card-content>
+            <h3>{{ data.totalCases }}</h3>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card class="card-2">
+          <mat-card-title>TOTAL RECOVERED</mat-card-title>
+          <mat-card-content>
+            <h3>{{ data.totalRecovered }}</h3>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card class="card-3">
+          <mat-card-title>TOTAL DEATHS</mat-card-title>
+          <mat-card-content>
+            <h3>{{ data.totalDeaths }}</h3>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div class="vaccinations">
+  <div class="totalVaccinations">
+    <img class="vaccineImg" src="../../assets/vaccine.svg" />
+    <div class="heading">
+      <h4>Total Vaccination Doses across India</h4>
+      <h3>1,14,30,14,049</h3>
+    </div>
+  </div>
+
+  <mat-divider [vertical]="true"></mat-divider>
+
+  <div class="todayVaccinations">
+    <img class="vaccineImg" src="../../assets/vaccine.svg" />
+    <div class="heading">
+      <h4>Vaccinations done today across India</h4>
+      <h3>61,73,200</h3>
+    </div>
+  </div>
+</div>

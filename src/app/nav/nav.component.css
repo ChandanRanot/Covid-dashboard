@@ -1,0 +1,59 @@
+mat-sidenav {
+  width: 280px;
+}
+
+.mat-drawer {
+  background: linear-gradient(45deg, #65799b, #5e2563);
+  color: white;
+  box-shadow: 1px 0px 10px #777;
+  font-weight: lighter;
+}
+.main-content {
+  padding: 20px;
+}
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+.menuIcon {
+  border: none;
+  background: transparent;
+  padding-top: 9px;
+  color: rgb(192, 245, 192);
+}
+
+mat-toolbar {
+  padding-left: 0;
+  background-color: white;
+  box-shadow: 0px 0px 6px -3px rgb(0 0 0 / 50%);
+}
+.toolbarHeading {
+  background: linear-gradient(to right, rgb(135, 236, 135), rgb(160, 212, 229));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.covisafe {
+  text-decoration: none;
+}
+
+.loginBtn {
+  background: linear-gradient(to right, rgb(135, 236, 135), rgb(160, 212, 229));
+  border: none;
+  font-weight: lighter;
+}
+
+mat-nav-list a {
+  color: white;
+}
+
+mat-nav-list a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(162, 240, 162);
+  transition: width 0.3s;
+}
+mat-nav-list a:hover::after {
+  width: 100%;
+}

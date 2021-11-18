@@ -1,0 +1,41 @@
+footer {
+  background: linear-gradient(45deg, #65799b, #5e2563);
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-link-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link-list li a {
+  padding-right: 18px;
+}
+.social-link-list li a img {
+  width: 70%;
+}
+.ft-nav,
+.ft-other-nav {
+  list-style: none;
+  margin: 0;
+}
+
+.ft-nav li,
+.ft-other-nav li {
+  padding-bottom: 20px;
+}
+
+.ft-nav li a,
+.ft-other-nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+.ft-nav li a:hover,
+.ft-other-nav li a:hover {
+  color: limegreen;
+}
