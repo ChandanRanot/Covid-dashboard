@@ -16,7 +16,11 @@
 </div>
 
 <div class="cards">
-  <mat-card class="mainCard" *ngFor="let data of covidData">
+  <mat-card
+    class="mainCard"
+    *ngFor="let data of covidData"
+    (click)="onClick(data.id)"
+  >
     <mat-card-title
       >CASES ACROSS <span>{{ data.place | uppercase }}</span>
     </mat-card-title>

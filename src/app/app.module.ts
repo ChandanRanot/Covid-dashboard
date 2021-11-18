@@ -12,6 +12,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -19,9 +20,17 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { HomeComponent } from './home/home.component';
 import { CovidDataService } from './covid-data.service';
 import { FooterComponent } from './footer/footer.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, LoginFormComponent, HomeComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    NavComponent,
+    LoginFormComponent,
+    HomeComponent,
+    FooterComponent,
+    TableComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -36,6 +45,7 @@ import { FooterComponent } from './footer/footer.component';
     MatInputModule,
     MatCardModule,
     MatDividerModule,
+    HttpClientModule,
   ],
   providers: [CovidDataService],
   bootstrap: [AppComponent],

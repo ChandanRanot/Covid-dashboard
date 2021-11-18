@@ -39,3 +39,17 @@ footer {
 .ft-other-nav li a:hover {
   color: limegreen;
 }
+
+@media only screen and (max-width: 860px) {
+  .social-link-list,
+  .ft-nav,
+  .ft-other-nav {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  footer {
+    display: block;
+  }
+}

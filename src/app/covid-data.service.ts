@@ -1,29 +1,17 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Data } from './data';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CovidDataService {
-  constructor() {}
+  private _url: string = '/assets/data.json';
 
-  getData() {
-    return [
-      {
-        id: 1,
-        place: 'World',
-        totalCases: 255099514,
-        totalRecovered: 230635391,
-        totalDeaths: 5129836,
-        activeCases: 19334287,
-      },
-      {
-        id: 2,
-        place: 'India',
-        totalCases: 34466598,
-        totalRecovered: 33873890,
-        totalDeaths: 464153,
-        activeCases: 128555,
-      },
-    ];
+  constructor(private http: HttpClient) {}
+
+  getData(): Observable<Data[]> {
+    return this.http.get<Data[]>(this._url);
   }
 }

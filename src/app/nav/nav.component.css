@@ -57,3 +57,14 @@ mat-nav-list a::after {
 mat-nav-list a:hover::after {
   width: 100%;
 }
+
+@media only screen and (max-width: 860px) {
+  mat-sidenav {
+    width: 160px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  mat-sidenav {
+    width: 120px;
+  }
+}
