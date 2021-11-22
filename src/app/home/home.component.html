@@ -18,7 +18,7 @@
 <div class="cards">
   <mat-card
     class="mainCard"
-    *ngFor="let data of covidData"
+    *ngFor="let data of covidData$ | async"
     (click)="onClick(data.id)"
   >
     <mat-card-title

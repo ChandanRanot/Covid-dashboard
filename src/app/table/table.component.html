@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav class="navbar" *ngIf="covidData$ | async as data">
   <button class="btn btn-secondary btn-sm m-3" (click)="sortAlphabetically()">
     Sort Alphabetically
   </button>
@@ -7,7 +7,6 @@
     type="text"
     name="place"
     [(ngModel)]="place"
-    (ngModelChange)="search()"
     placeholder="Enter place to search...."
   />
 </nav>
@@ -22,8 +21,14 @@
       <td>Total Deaths</td>
     </tr>
   </thead>
-  <tbody>
-    <tr *ngFor="let location of differentLocations">
+  <tbody *ngIf="covidData$ | async as data">
+    <tr
+      *ngFor="
+        let location of data[index].differentlocations
+          | filter: place
+          | sort: doSort
+      "
+    >
       <td>{{ location.place }}</td>
       <td>{{ location.totalCases }}</td>
       <td>{{ location.activeCases }}</td>

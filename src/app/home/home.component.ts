@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Data } from '../data';
 import { CovidDataService } from '../covid-data.service';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  public covidData: Data[] = [];
+  covidData$: Observable<Data[]>;
 
   constructor(
     private _covidDataService: CovidDataService,
@@ -17,9 +18,7 @@ export class HomeComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this._covidDataService
-      .getData()
-      .subscribe((data) => (this.covidData = data));
+    this.covidData$ = this._covidDataService.getData();
   }
 
   onClick(id: number) {

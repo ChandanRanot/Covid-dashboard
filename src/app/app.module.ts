@@ -21,6 +21,8 @@ import { HomeComponent } from './home/home.component';
 import { CovidDataService } from './covid-data.service';
 import { FooterComponent } from './footer/footer.component';
 import { TableComponent } from './table/table.component';
+import { FilterPipe } from './filter.pipe';
+import { SortPipe } from './sort.pipe';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { TableComponent } from './table/table.component';
     HomeComponent,
     FooterComponent,
     TableComponent,
+    FilterPipe,
+    SortPipe,
   ],
   imports: [
     BrowserModule,
